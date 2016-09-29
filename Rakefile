@@ -7,7 +7,13 @@ end
 
 require 'rails/dummy/tasks'
 require 'yard'
+<<<<<<< 38f372c9a248697b8f10c29faa9261dcfd209126
 YARD::Rake::YardocTask.new
+=======
+YARD::Rake::YardocTask.new do |t|
+  t.files   = ['lib/**/*.rb']
+end
+>>>>>>> create inializer generator
 
 require 'bundler/gem_tasks'
 Bundler::GemHelper.install_tasks

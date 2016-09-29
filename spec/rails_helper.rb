@@ -5,6 +5,11 @@ require File.expand_path('../dummy/config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'spec_helper'
 require 'rspec/rails'
+<<<<<<< 38f372c9a248697b8f10c29faa9261dcfd209126
+=======
+require 'factory_girl'
+require 'database_cleaner'
+>>>>>>> create inializer generator
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -20,7 +25,11 @@ require 'rspec/rails'
 # directory. Alternatively, in the individual `*_spec.rb` files, manually
 # require only the support files necessary.
 #
+<<<<<<< 38f372c9a248697b8f10c29faa9261dcfd209126
 
+=======
+$LOAD_PATH << File.expand_path('../lib', __dir__)
+>>>>>>> create inializer generator
 # Checks for pending migration and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
 ActiveRecord::Migration.maintain_test_schema!
